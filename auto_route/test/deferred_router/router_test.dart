@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import '../router_test_utils.dart';
 import '../test_page.dart';
 import 'router.dart';
+import 'router.gr.dart';
 
 void main() {
   late AppRouter router;

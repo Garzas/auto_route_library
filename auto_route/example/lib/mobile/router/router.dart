@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:example/mobile/screens/books/book_details_page.dart';
 import 'package:example/mobile/screens/books/book_list_page.dart';
+import 'package:example/mobile/screens/empty/empty_router_page.dart';
 
 import '../screens/home_page.dart';
 import '../screens/login_page.dart';
@@ -21,6 +22,7 @@ import '../screens/user-data/routes.dart';
           path: 'books',
           page: EmptyRouterPage,
           name: 'BooksTab',
+          initial: true,
           children: [
             AutoRoute(
               path: '',
@@ -37,7 +39,6 @@ import '../screens/user-data/routes.dart';
         AutoRoute(
           path: 'settings/:tab',
           page: SettingsPage,
-          initial: true,
           name: 'SettingsTab',
         ),
       ],
